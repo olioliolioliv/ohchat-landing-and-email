@@ -1,0 +1,10 @@
+{
+  "name": "ohchat-affiliate-landing",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx serve -s . -l $PORT"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
