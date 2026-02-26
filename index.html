@@ -3,2128 +3,782 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OhChat Affiliate Program — Earn Up to 40% Revshare | Apply Now</title>
-  <meta name="description" content="Join OhChat's affiliate program. Up to 40% revshare, $37 PPS, celebrity AI digital twins including Carmen Electra & Katie Price. Weekly payouts.">
-  <meta property="og:title" content="OhChat Affiliate Program — Earn Up to 40% Revshare">
-  <meta property="og:description" content="The highest-converting AI companion platform. Celebrity digital twins, weekly payouts, dedicated support.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ohchat.com/affiliate">
+  <title>OhChat Affiliate Program — Best Offer in AI Girlfriends | Apply Now</title>
+  <meta name="description" content="The #1 affiliate offer in AI girlfriends. Up to 40% revshare, $37 PPS, celebrity funnels, crypto payouts. Beat Candy.ai and OurDream.ai EPCs.">
   <link rel="preconnect" href="https://api.fontshare.com">
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&f[]=jet-brains-mono@400,700&display=swap" rel="stylesheet">
   <style>
-    /* ============================================
-       CSS RESET & VARIABLES
-    ============================================ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* Brand Colors */
-      --bg-deep: #0A0A0C;
-      --bg-body: #0D0D11;
-      --bg-card: #141418;
-      --bg-card-hover: #18181D;
+      --bg: #0A0A0C;
+      --bg2: #0D0D11;
+      --card: #141418;
+      --card2: #18181D;
       --accent: #FF6B35;
       --accent-light: #FF8F5E;
-      --accent-glow: rgba(255, 107, 53, 0.15);
-      --accent-glow-strong: rgba(255, 107, 53, 0.3);
-      --text-primary: #F0F0F2;
-      --text-secondary: #9A9AAE;
-      --text-muted: #5A5A6A;
-      --border: rgba(255, 255, 255, 0.06);
-      --border-hover: rgba(255, 255, 255, 0.12);
-      --success: #2DD4A8;
+      --text: #F0F0F2;
+      --text2: #9A9AAE;
+      --text3: #5A5A6A;
+      --border: rgba(255,255,255,0.06);
+      --green: #2DD4A8;
       --gold: #FFD700;
-      --gradient-orange: linear-gradient(135deg, #FF6B35, #FFB347, #FFD700);
-
-      /* Typography */
-      --font-display: 'Clash Display', 'Outfit', sans-serif;
-      --font-body: 'Satoshi', 'Plus Jakarta Sans', sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
-
-      /* Spacing */
-      --section-pad: clamp(60px, 10vw, 120px);
-      --container: min(1200px, 90vw);
+      --grad: linear-gradient(135deg, #FF6B35, #FFB347, #FFD700);
+      --font-d: 'Clash Display', sans-serif;
+      --font-b: 'Satoshi', sans-serif;
+      --font-m: 'JetBrains Mono', monospace;
     }
 
-    html {
-      scroll-behavior: smooth;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font-b); background: var(--bg2); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+
+    .container { max-width: min(1100px, 90vw); margin: 0 auto; padding: 0 24px; }
+
+    .reveal {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.6s cubic-bezier(0.16,1,0.3,1);
     }
-
-    body {
-      font-family: var(--font-body);
-      background: var(--bg-body);
-      color: var(--text-primary);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* ============================================
-       UTILITY CLASSES
-    ============================================ */
-    .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
-
-    .section-title {
-      font-family: var(--font-display);
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      margin-bottom: 16px;
-    }
-
-    .section-sub {
-      color: var(--text-secondary);
-      font-size: clamp(1rem, 1.8vw, 1.15rem);
-      max-width: 600px;
-      line-height: 1.7;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: clamp(40px, 6vw, 64px);
-    }
-
-    .accent-text { color: var(--accent); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
 
     .gradient-text {
-      background: var(--gradient-orange);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background: var(--grad);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text;
     }
 
-    /* Reveal animation base */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ============================================
-       NOISE TEXTURE OVERLAY
-    ============================================ */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 9999;
-      opacity: 0.4;
-    }
-
-    /* ============================================
-       1. HERO
-    ============================================ */
+    /* ===== HERO ===== */
     .hero {
-      position: relative;
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       text-align: center;
-      padding: clamp(100px, 15vh, 160px) 24px clamp(60px, 10vh, 100px);
-      overflow: hidden;
+      padding: clamp(100px,15vh,160px) 24px clamp(60px,10vh,100px);
+      position: relative; overflow: hidden;
     }
-
     .hero::before {
-      content: '';
-      position: absolute;
-      top: -20%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 800px;
-      height: 800px;
-      background: radial-gradient(circle, rgba(255, 107, 53, 0.12) 0%, rgba(255, 107, 53, 0.04) 40%, transparent 70%);
+      content: ''; position: absolute; top: -20%; left: 50%; transform: translateX(-50%);
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(255,107,53,0.12) 0%, transparent 65%);
       pointer-events: none;
     }
-
     .hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 200px;
-      background: linear-gradient(to top, var(--bg-body), transparent);
-      pointer-events: none;
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 150px;
+      background: linear-gradient(to top, var(--bg2), transparent); pointer-events: none;
     }
-
-    .hero-content { position: relative; z-index: 2; max-width: 820px; }
+    .hero-content { position: relative; z-index: 2; max-width: 780px; }
 
     .hero-logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 28px;
-      opacity: 0;
-      animation: fadeUp 0.8s 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      display: inline-flex; align-items: center; gap: 10px; margin-bottom: 24px;
+      opacity: 0; animation: fadeUp 0.7s 0.2s ease forwards;
     }
-
-    .hero-logo svg {
-      width: 44px;
-      height: 44px;
-    }
-
-    .hero-logo-text {
-      font-family: var(--font-display);
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: var(--text-primary);
-    }
+    .hero-logo img { width: 140px; height: auto; margin-left: -10px; }
+    .hero-logo span { font-family: var(--font-d); font-size: 1.4rem; font-weight: 600; }
 
     .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 18px;
-      border-radius: 100px;
-      background: rgba(255, 107, 53, 0.1);
-      border: 1px solid rgba(255, 107, 53, 0.25);
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--accent-light);
-      margin-bottom: 32px;
-      opacity: 0;
-      animation: fadeUp 0.8s 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 7px 16px; border-radius: 100px;
+      background: rgba(255,107,53,0.1); border: 1px solid rgba(255,107,53,0.25);
+      font-size: 0.82rem; font-weight: 500; color: var(--accent-light);
+      margin-bottom: 28px;
+      opacity: 0; animation: fadeUp 0.7s 0.3s ease forwards;
     }
-
-    .hero-badge .pulse {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
+    .hero-badge .dot {
+      width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
       animation: pulse 2s infinite;
     }
-
     @keyframes pulse {
-      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.4); }
-      50% { opacity: 0.8; box-shadow: 0 0 0 8px rgba(255, 107, 53, 0); }
+      0%,100% { box-shadow: 0 0 0 0 rgba(255,107,53,0.4); }
+      50% { box-shadow: 0 0 0 7px rgba(255,107,53,0); }
     }
 
     .hero h1 {
-      font-family: var(--font-display);
-      font-size: clamp(2.8rem, 7vw, 5rem);
-      font-weight: 700;
-      line-height: 1.05;
-      letter-spacing: -0.03em;
-      margin-bottom: 24px;
-      opacity: 0;
-      animation: fadeUp 0.8s 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      font-family: var(--font-d); font-weight: 700;
+      font-size: clamp(2.6rem,6.5vw,4.5rem);
+      line-height: 1.05; letter-spacing: -0.03em;
+      margin-bottom: 20px;
+      opacity: 0; animation: fadeUp 0.7s 0.4s ease forwards;
     }
 
     .hero-sub {
-      font-size: clamp(1.05rem, 2vw, 1.25rem);
-      color: var(--text-secondary);
-      line-height: 1.7;
-      max-width: 640px;
-      margin: 0 auto 40px;
-      opacity: 0;
-      animation: fadeUp 0.8s 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      font-size: clamp(1rem,1.8vw,1.15rem);
+      color: var(--text2); line-height: 1.7;
+      max-width: 580px; margin: 0 auto 32px;
+      opacity: 0; animation: fadeUp 0.7s 0.55s ease forwards;
     }
 
     .hero-ctas {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      opacity: 0;
-      animation: fadeUp 0.8s 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap;
+      opacity: 0; animation: fadeUp 0.7s 0.7s ease forwards;
     }
 
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity:0; transform:translateY(20px); }
+      to { opacity:1; transform:translateY(0); }
     }
 
-    /* Buttons */
     .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--font-body);
-      font-weight: 600;
-      font-size: 0.95rem;
-      padding: 14px 28px;
-      border-radius: 12px;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      white-space: nowrap;
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-b); font-weight: 600; font-size: 0.95rem;
+      padding: 14px 28px; border-radius: 12px; border: none;
+      cursor: pointer; text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.16,1,0.3,1); white-space: nowrap;
     }
-
     .btn-primary {
-      background: var(--accent);
-      color: #fff;
-      box-shadow: 0 0 0 0 rgba(255, 107, 53, 0), 0 4px 16px rgba(255, 107, 53, 0.25);
+      background: var(--accent); color: #fff;
+      box-shadow: 0 4px 20px rgba(255,107,53,0.25);
     }
     .btn-primary:hover {
-      background: var(--accent-light);
-      box-shadow: 0 0 30px rgba(255, 107, 53, 0.3), 0 8px 32px rgba(255, 107, 53, 0.3);
-      transform: translateY(-2px);
+      background: var(--accent-light); transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(255,107,53,0.35);
     }
-
     .btn-ghost {
-      background: transparent;
-      color: var(--text-primary);
-      border: 1px solid var(--border-hover);
+      background: transparent; color: var(--text);
+      border: 1px solid rgba(255,255,255,0.12);
     }
-    .btn-ghost:hover {
-      border-color: var(--accent);
-      color: var(--accent-light);
-      background: rgba(255, 107, 53, 0.05);
-    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent-light); }
 
-    .btn-text {
-      background: transparent;
-      color: var(--text-secondary);
-      padding: 14px 16px;
-    }
-    .btn-text:hover { color: var(--accent-light); }
-    .btn-text svg { width: 16px; height: 16px; }
-
-    /* ============================================
-       2. STATS BAR
-    ============================================ */
-    .stats-bar {
-      padding: 0 24px;
-      position: relative;
-      z-index: 2;
-      margin-top: -40px;
-    }
-
-    .stats-bar-inner {
-      max-width: var(--container);
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0;
-      padding: 32px 0;
-      border-radius: 20px;
-      background: rgba(20, 20, 24, 0.8);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+    /* ===== STATS BAR ===== */
+    .stats { padding: 0 24px; margin-top: -30px; position: relative; z-index: 2; }
+    .stats-inner {
+      max-width: min(1100px,90vw); margin: 0 auto;
+      display: grid; grid-template-columns: repeat(5, 1fr);
+      padding: 28px 0; border-radius: 16px;
+      background: rgba(20,20,24,0.8); backdrop-filter: blur(16px);
       border: 1px solid var(--border);
     }
-
-    .stat-item {
-      flex: 1;
-      text-align: center;
-      padding: 8px 24px;
+    .stat {
+      text-align: center; padding: 8px 16px;
       border-right: 1px solid var(--border);
     }
-    .stat-item:last-child { border-right: none; }
+    .stat:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--font-m); font-size: clamp(1.4rem,2.5vw,2rem);
+      font-weight: 700; color: var(--accent);
+    }
+    .stat-lbl { font-size: 0.75rem; color: var(--text3); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
 
-    .stat-number {
-      font-family: var(--font-mono);
-      font-size: clamp(1.5rem, 3vw, 2.2rem);
-      font-weight: 700;
-      color: var(--accent);
-      letter-spacing: -0.02em;
+    /* ===== WHY SECTION ===== */
+    .why { padding: clamp(60px,10vw,100px) 24px; }
+    .why-header { text-align: center; margin-bottom: clamp(36px,5vw,56px); }
+    .why-header h2 {
+      font-family: var(--font-d); font-size: clamp(1.8rem,3.5vw,2.6rem);
+      font-weight: 600; letter-spacing: -0.02em; margin-bottom: 12px;
     }
+    .why-header p { color: var(--text2); font-size: clamp(0.95rem,1.5vw,1.05rem); max-width: 520px; margin: 0 auto; }
 
-    .stat-label {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-top: 4px;
+    .why-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+      max-width: min(1100px,90vw); margin: 0 auto;
     }
+    .why-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 28px 22px; transition: all 0.3s;
+    }
+    .why-card:hover { border-color: rgba(255,107,53,0.15); transform: translateY(-3px); }
+    .why-card .icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: rgba(255,107,53,0.08); display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px; font-size: 1.1rem;
+    }
+    .why-card h3 { font-family: var(--font-d); font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+    .why-card p { color: var(--text2); font-size: 0.85rem; line-height: 1.6; }
 
-    .stat-item.cnn-stat {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
-    }
-    .cnn-label {
-      font-size: 0.7rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-    .cnn-logo {
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 1.4rem;
-      color: #CC0000;
-      letter-spacing: 0.05em;
-    }
-
-    /* ============================================
-       3. AUDIENCE SEGMENTATION
-    ============================================ */
-    .audience {
-      padding: var(--section-pad) 24px;
-    }
-
-    .audience-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      max-width: var(--container);
-      margin: 0 auto;
-    }
-
-    .audience-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 32px 24px;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .audience-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--gradient-orange);
-      opacity: 0;
-      transition: opacity 0.4s;
-    }
-
-    .audience-card:hover {
-      border-color: rgba(255, 107, 53, 0.2);
-      transform: translateY(-4px);
-      background: var(--bg-card-hover);
-    }
-    .audience-card:hover::before { opacity: 1; }
-
-    .audience-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: rgba(255, 107, 53, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-      font-size: 1.4rem;
-    }
-
-    .audience-card h3 {
-      font-family: var(--font-display);
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 12px;
-    }
-
-    .audience-card p {
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      line-height: 1.65;
-    }
-
-    /* ============================================
-       4. COMMISSION MODELS
-    ============================================ */
-    .commission {
-      padding: var(--section-pad) 24px;
-      position: relative;
-    }
-
+    /* ===== COMMISSION ===== */
+    .commission { padding: clamp(60px,10vw,100px) 24px; position: relative; }
     .commission::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(255, 107, 53, 0.06) 0%, transparent 70%);
+      content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(255,107,53,0.05) 0%, transparent 65%);
       pointer-events: none;
     }
+    .commission-header { text-align: center; margin-bottom: clamp(36px,5vw,56px); }
+    .commission-header h2 {
+      font-family: var(--font-d); font-size: clamp(1.8rem,3.5vw,2.6rem);
+      font-weight: 600; letter-spacing: -0.02em; margin-bottom: 12px;
+    }
+    .commission-header p { color: var(--text2); font-size: clamp(0.95rem,1.5vw,1.05rem); max-width: 480px; margin: 0 auto; }
 
     .commission-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      max-width: var(--container);
-      margin: 0 auto;
-      position: relative;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+      max-width: min(1100px,90vw); margin: 0 auto; position: relative;
     }
+    .comm-card {
+      background: rgba(20,20,24,0.6); backdrop-filter: blur(16px);
+      border: 1px solid var(--border); border-radius: 18px;
+      padding: 32px 24px; transition: all 0.3s;
+    }
+    .comm-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.1); }
+    .comm-card.featured {
+      border-color: rgba(255,107,53,0.3);
+      box-shadow: 0 0 50px rgba(255,107,53,0.07), inset 0 0 50px rgba(255,107,53,0.02);
+    }
+    .comm-card.featured:hover {
+      border-color: rgba(255,107,53,0.5);
+      box-shadow: 0 0 70px rgba(255,107,53,0.1);
+    }
+    .comm-badge {
+      display: inline-block; padding: 4px 12px; border-radius: 100px;
+      font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+      margin-bottom: 16px;
+    }
+    .badge-pop { background: rgba(255,107,53,0.12); color: var(--accent-light); border: 1px solid rgba(255,107,53,0.2); }
+    .badge-cel { background: rgba(255,215,0,0.08); color: var(--gold); border: 1px solid rgba(255,215,0,0.15); }
+    .badge-vol { background: rgba(45,212,168,0.08); color: var(--green); border: 1px solid rgba(45,212,168,0.15); }
 
-    .commission-card {
-      background: rgba(20, 20, 24, 0.6);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 36px 28px;
-      position: relative;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    .comm-rate { font-family: var(--font-d); font-size: clamp(2.2rem,3.5vw,2.8rem); font-weight: 700; }
+    .comm-type { color: var(--text2); font-size: 0.85rem; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    .comm-list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+    .comm-list li {
+      display: flex; align-items: flex-start; gap: 8px;
+      font-size: 0.85rem; color: var(--text2); line-height: 1.5;
     }
+    .comm-list li::before {
+      content: ''; width: 16px; height: 16px; min-width: 16px; border-radius: 50%;
+      background: rgba(45,212,168,0.1); margin-top: 2px;
+      background-image: url("data:image/svg+xml,%3Csvg width='8' height='7' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1' stroke='%232DD4A8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: center;
+    }
+    .comm-best { font-size: 0.75rem; color: var(--text3); font-style: italic; }
 
-    .commission-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(255, 255, 255, 0.1);
+    /* ===== CELEBRITIES ===== */
+    .celebs { padding: clamp(60px,10vw,100px) 24px; }
+    .celebs-header { text-align: center; margin-bottom: clamp(36px,5vw,48px); }
+    .celebs-header h2 {
+      font-family: var(--font-d); font-size: clamp(1.8rem,3.5vw,2.6rem);
+      font-weight: 600; letter-spacing: -0.02em; margin-bottom: 12px;
     }
-
-    .commission-card.featured {
-      border-color: rgba(255, 107, 53, 0.3);
-      box-shadow: 0 0 60px rgba(255, 107, 53, 0.08), inset 0 0 60px rgba(255, 107, 53, 0.03);
-    }
-    .commission-card.featured:hover {
-      border-color: rgba(255, 107, 53, 0.5);
-      box-shadow: 0 0 80px rgba(255, 107, 53, 0.12), inset 0 0 60px rgba(255, 107, 53, 0.05);
-    }
-
-    .commission-badge {
-      display: inline-block;
-      padding: 5px 14px;
-      border-radius: 100px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 20px;
-    }
-    .badge-popular {
-      background: rgba(255, 107, 53, 0.15);
-      color: var(--accent-light);
-      border: 1px solid rgba(255, 107, 53, 0.25);
-    }
-    .badge-celebrity {
-      background: rgba(255, 215, 0, 0.1);
-      color: var(--gold);
-      border: 1px solid rgba(255, 215, 0, 0.2);
-    }
-    .badge-volume {
-      background: rgba(45, 212, 168, 0.1);
-      color: var(--success);
-      border: 1px solid rgba(45, 212, 168, 0.2);
-    }
-
-    .commission-rate {
-      font-family: var(--font-display);
-      font-size: clamp(2.4rem, 4vw, 3rem);
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .commission-type {
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      margin-bottom: 24px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .commission-features {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      margin-bottom: 28px;
-    }
-
-    .commission-features li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    .commission-features li::before {
-      content: '';
-      width: 18px;
-      height: 18px;
-      min-width: 18px;
-      border-radius: 50%;
-      background: rgba(45, 212, 168, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 2px;
-      background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1' stroke='%232DD4A8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .commission-best {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      font-style: italic;
-    }
-
-    /* ============================================
-       5. CELEBRITY ROSTER
-    ============================================ */
-    .celebrities {
-      padding: var(--section-pad) 24px;
-    }
+    .celebs-header p { color: var(--text2); font-size: clamp(0.95rem,1.5vw,1.05rem); max-width: 520px; margin: 0 auto; }
 
     .celeb-grid {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 16px;
-      max-width: var(--container);
-      margin: 0 auto;
+      display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px;
+      max-width: min(1100px,90vw); margin: 0 auto;
     }
+    .celeb {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 20px 12px; text-align: center; transition: all 0.3s;
+    }
+    .celeb:hover { border-color: rgba(255,107,53,0.2); transform: translateY(-3px); }
+    .celeb-av {
+      width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-d); font-weight: 700; font-size: 1.1rem; color: var(--text);
+    }
+    .av1 { background: linear-gradient(135deg, #FF6B35, #FF3E6C); }
+    .av2 { background: linear-gradient(135deg, #FFB347, #FF6B35); }
+    .av3 { background: linear-gradient(135deg, #FF3E6C, #D63384); }
+    .av4 { background: linear-gradient(135deg, #FF8F5E, #FFD700); }
+    .av5 { background: linear-gradient(135deg, #D63384, #FF6B35); }
+    .av6 { background: linear-gradient(135deg, #FFD700, #FF8F5E); }
 
-    .celeb-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 16px;
-      text-align: center;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
+    .celeb-name { font-family: var(--font-d); font-weight: 600; font-size: 0.88rem; margin-bottom: 4px; }
+    .celeb-tag { font-size: 0.7rem; color: var(--accent-light); }
+    .celeb-fol { font-size: 0.7rem; color: var(--text3); margin-top: 2px; }
+    .celeb-more { text-align: center; margin-top: 28px; font-size: 0.9rem; color: var(--text2); }
+    .celeb-more span { color: var(--accent); font-weight: 600; }
 
-    .celeb-card:hover {
-      border-color: rgba(255, 107, 53, 0.2);
-      transform: translateY(-4px);
-    }
-
-    .celeb-avatar {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      margin: 0 auto 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 1.3rem;
-      color: var(--text-primary);
-    }
-
-    .celeb-avatar.av1 { background: linear-gradient(135deg, #FF6B35, #FF3E6C); }
-    .celeb-avatar.av2 { background: linear-gradient(135deg, #FFB347, #FF6B35); }
-    .celeb-avatar.av3 { background: linear-gradient(135deg, #FF3E6C, #D63384); }
-    .celeb-avatar.av4 { background: linear-gradient(135deg, #FF8F5E, #FFD700); }
-    .celeb-avatar.av5 { background: linear-gradient(135deg, #D63384, #FF6B35); }
-    .celeb-avatar.av6 { background: linear-gradient(135deg, #FFD700, #FF8F5E); }
-
-    .celeb-name {
-      font-family: var(--font-display);
-      font-weight: 600;
-      font-size: 0.95rem;
-      margin-bottom: 6px;
-    }
-
-    .celeb-verified {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 0.75rem;
-      color: var(--accent-light);
-    }
-    .celeb-verified svg { width: 12px; height: 12px; }
-
-    .celeb-followers {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin-top: 4px;
-    }
-
-    .celeb-more {
-      text-align: center;
-      margin-top: 32px;
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-    }
-    .celeb-more span {
-      color: var(--accent);
-      font-weight: 600;
-    }
-
-    /* ============================================
-       6. PRODUCT PREVIEW
-    ============================================ */
-    .product-preview {
-      padding: var(--section-pad) 24px;
-    }
-
-    .preview-container {
-      max-width: var(--container);
-      margin: 0 auto;
-      display: flex;
-      gap: 32px;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .phone-mockup {
-      width: 260px;
-      height: 520px;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 32px;
-      padding: 12px;
-      position: relative;
-      box-shadow: 0 40px 80px rgba(0,0,0,0.3);
-    }
-
-    .phone-mockup-inner {
-      width: 100%;
-      height: 100%;
-      border-radius: 22px;
-      background: linear-gradient(180deg, #1a1a22 0%, #0d0d14 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      text-align: center;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .phone-notch {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 120px;
-      height: 28px;
-      background: var(--bg-card);
-      border-radius: 0 0 16px 16px;
-    }
-
-    .phone-ui-avatar {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #FF6B35, #FF3E6C);
-      margin-bottom: 12px;
-      margin-top: 20px;
-    }
-    .phone-ui-name {
-      font-family: var(--font-display);
-      font-weight: 600;
-      font-size: 0.95rem;
-      margin-bottom: 4px;
-    }
-    .phone-ui-status {
-      font-size: 0.7rem;
-      color: var(--success);
-      margin-bottom: 16px;
-    }
-    .phone-ui-chat {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      align-items: flex-start;
-    }
-    .chat-bubble {
-      max-width: 80%;
-      padding: 10px 14px;
-      border-radius: 14px;
-      font-size: 0.75rem;
-      line-height: 1.5;
-    }
-    .chat-ai {
-      background: rgba(255, 107, 53, 0.12);
-      color: var(--text-primary);
-      border-bottom-left-radius: 4px;
-    }
-    .chat-user {
-      background: rgba(255, 255, 255, 0.08);
-      color: var(--text-secondary);
-      align-self: flex-end;
-      border-bottom-right-radius: 4px;
-    }
-
-    .browser-mockup {
-      width: 440px;
-      height: 320px;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 40px 80px rgba(0,0,0,0.3);
-    }
-
-    .browser-bar {
-      height: 36px;
-      background: rgba(255,255,255,0.03);
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      padding: 0 14px;
-      gap: 8px;
-    }
-
-    .browser-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.1);
-    }
-    .browser-dot:nth-child(1) { background: #FF5F57; }
-    .browser-dot:nth-child(2) { background: #FFBD2E; }
-    .browser-dot:nth-child(3) { background: #28CA41; }
-
-    .browser-url {
-      margin-left: 12px;
-      font-size: 0.7rem;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-    }
-
-    .browser-content {
-      padding: 24px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      height: calc(100% - 36px);
-    }
-
-    .browser-card-mock {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .mock-avatar-small {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #FF6B35, #FFD700);
-    }
-
-    .mock-line {
-      height: 8px;
-      border-radius: 4px;
-      background: rgba(255,255,255,0.06);
-    }
-    .mock-line.w60 { width: 60%; }
-    .mock-line.w80 { width: 80%; }
-    .mock-line.w40 { width: 40%; }
-
-    .preview-caption {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 1rem;
-      color: var(--text-secondary);
-      max-width: var(--container);
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .preview-caption strong { color: var(--text-primary); }
-
-    /* ============================================
-       7. FEATURES GRID
-    ============================================ */
-    .features {
-      padding: var(--section-pad) 24px;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      max-width: var(--container);
-      margin: 0 auto;
-    }
-
-    .feature-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 32px 24px;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .feature-card:hover {
-      border-color: rgba(255, 107, 53, 0.15);
-      transform: translateY(-4px);
-    }
-
-    .feature-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: rgba(255, 107, 53, 0.08);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 18px;
-      font-size: 1.2rem;
-    }
-
-    .feature-card h3 {
-      font-family: var(--font-display);
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .feature-card p {
-      color: var(--text-secondary);
-      font-size: 0.88rem;
-      line-height: 1.6;
-    }
-
-    /* ============================================
-       8. FOUNDER QUOTE
-    ============================================ */
-    .founder-quote {
-      padding: var(--section-pad) 24px;
-      position: relative;
-    }
-
-    .quote-inner {
-      max-width: 760px;
-      margin: 0 auto;
-      text-align: center;
-      position: relative;
-    }
-
+    /* ===== QUOTE ===== */
+    .quote-section { padding: clamp(48px,8vw,80px) 24px; }
+    .quote-inner { max-width: 680px; margin: 0 auto; text-align: center; position: relative; }
     .quote-mark {
-      font-family: Georgia, serif;
-      font-size: 8rem;
-      line-height: 1;
-      color: rgba(255, 107, 53, 0.15);
-      position: absolute;
-      top: -50px;
-      left: 50%;
-      transform: translateX(-50%);
+      font-family: Georgia, serif; font-size: 6rem; line-height: 1;
+      color: rgba(255,107,53,0.12); position: absolute; top: -40px; left: 50%; transform: translateX(-50%);
       pointer-events: none;
     }
-
     .quote-text {
-      font-family: var(--font-display);
-      font-size: clamp(1.3rem, 2.8vw, 1.8rem);
-      font-weight: 500;
-      line-height: 1.5;
-      margin-bottom: 28px;
-      position: relative;
+      font-family: var(--font-d); font-size: clamp(1.2rem,2.5vw,1.6rem);
+      font-weight: 500; line-height: 1.5; margin-bottom: 24px; position: relative;
     }
-
-    .quote-author {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-    }
-
-    .quote-avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
+    .quote-author { display: flex; align-items: center; justify-content: center; gap: 12px; }
+    .quote-av {
+      width: 42px; height: 42px; border-radius: 50%;
       background: linear-gradient(135deg, var(--accent), var(--accent-light));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-d); font-weight: 700; font-size: 0.95rem;
+    }
+    .quote-info { text-align: left; }
+    .quote-name { font-weight: 600; font-size: 0.9rem; }
+    .quote-title { font-size: 0.8rem; color: var(--text2); }
+
+    /* ===== FAQ ===== */
+    .faq { padding: clamp(60px,10vw,100px) 24px; }
+    .faq-header { text-align: center; margin-bottom: clamp(36px,5vw,48px); }
+    .faq-header h2 {
+      font-family: var(--font-d); font-size: clamp(1.8rem,3.5vw,2.6rem);
+      font-weight: 600; margin-bottom: 12px;
     }
 
-    .quote-author-info {
-      text-align: left;
+    .faq-list { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 2px; }
+    .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: border-color 0.3s; }
+    .faq-item.active { border-color: rgba(255,107,53,0.2); }
+    .faq-q {
+      width: 100%; background: none; border: none;
+      padding: 18px 20px; display: flex; align-items: center; justify-content: space-between;
+      cursor: pointer; font-family: var(--font-b); font-size: 0.9rem; font-weight: 600;
+      color: var(--text); text-align: left; gap: 14px;
     }
-
-    .quote-author-name {
-      font-weight: 600;
-      font-size: 1rem;
-    }
-
-    .quote-author-title {
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-    }
-
-    /* ============================================
-       9. FAQ
-    ============================================ */
-    .faq {
-      padding: var(--section-pad) 24px;
-    }
-
-    .faq-list {
-      max-width: 780px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .faq-item {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      overflow: hidden;
-      transition: border-color 0.3s;
-    }
-
-    .faq-item.active {
-      border-color: rgba(255, 107, 53, 0.2);
-    }
-
-    .faq-question {
-      width: 100%;
-      background: none;
-      border: none;
-      padding: 22px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      text-align: left;
-      gap: 16px;
-    }
-
-    .faq-question:hover { color: var(--accent-light); }
-
+    .faq-q:hover { color: var(--accent-light); }
     .faq-icon {
-      width: 28px;
-      height: 28px;
-      min-width: 28px;
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.04);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 24px; height: 24px; min-width: 24px; border-radius: 6px;
+      background: rgba(255,255,255,0.04);
+      display: flex; align-items: center; justify-content: center;
       transition: transform 0.3s, background 0.3s;
     }
+    .faq-item.active .faq-icon { transform: rotate(45deg); background: rgba(255,107,53,0.12); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1); }
+    .faq-a-inner { padding: 0 20px 18px; color: var(--text2); font-size: 0.85rem; line-height: 1.7; }
 
-    .faq-item.active .faq-icon {
-      transform: rotate(45deg);
-      background: rgba(255, 107, 53, 0.15);
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .faq-answer-inner {
-      padding: 0 24px 22px;
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      line-height: 1.7;
-    }
-
-    /* ============================================
-       10. HOW IT WORKS
-    ============================================ */
-    .how-it-works {
-      padding: var(--section-pad) 24px;
-    }
-
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-      max-width: 900px;
-      margin: 0 auto 48px;
-      position: relative;
-    }
-
-    .steps-grid::before {
-      content: '';
-      position: absolute;
-      top: 36px;
-      left: 15%;
-      right: 15%;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent), rgba(255, 107, 53, 0.2));
-    }
-
-    .step-item { text-align: center; position: relative; }
-
-    .step-number {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      background: var(--bg-card);
-      border: 2px solid var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-      font-family: var(--font-mono);
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--accent);
-      position: relative;
-      z-index: 2;
-    }
-
-    .step-title {
-      font-family: var(--font-display);
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .step-desc {
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    .hiw-cta {
-      text-align: center;
-    }
-
-    .hiw-email {
-      display: block;
-      margin-top: 16px;
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-    }
-    .hiw-email a {
-      color: var(--accent-light);
-      text-decoration: none;
-    }
-    .hiw-email a:hover { text-decoration: underline; }
-
-    /* ============================================
-       11. SIGNUP FORM
-    ============================================ */
-    .signup {
-      padding: var(--section-pad) 24px;
-      position: relative;
-    }
-
+    /* ===== SIGNUP ===== */
+    .signup { padding: clamp(60px,10vw,100px) 24px; position: relative; }
     .signup::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 800px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(255, 107, 53, 0.05) 0%, transparent 60%);
+      content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 600px; height: 500px;
+      background: radial-gradient(circle, rgba(255,107,53,0.04) 0%, transparent 55%);
       pointer-events: none;
     }
-
-    .signup-form-wrapper {
-      max-width: 640px;
-      margin: 0 auto;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: clamp(32px, 5vw, 48px);
-      position: relative;
+    .signup-header { text-align: center; margin-bottom: clamp(28px,4vw,40px); }
+    .signup-header h2 {
+      font-family: var(--font-d); font-size: clamp(1.8rem,3.5vw,2.6rem);
+      font-weight: 600; margin-bottom: 10px;
     }
+    .signup-header p { color: var(--text2); font-size: 0.95rem; }
 
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
+    .signup-form {
+      max-width: 580px; margin: 0 auto;
+      background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+      padding: clamp(28px,4vw,40px); position: relative;
     }
-
-    .form-group {
-      margin-bottom: 18px;
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-g { margin-bottom: 14px; }
+    .form-g label {
+      display: block; font-size: 0.75rem; font-weight: 600; color: var(--text2);
+      margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em;
     }
-
-    .form-group label {
-      display: block;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--text-secondary);
-      margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
+    .form-g input, .form-g select, .form-g textarea {
+      width: 100%; padding: 12px 14px;
+      background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 9px;
+      color: var(--text); font-family: var(--font-b); font-size: 0.9rem;
+      transition: border-color 0.3s, box-shadow 0.3s; outline: none;
     }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 13px 16px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      color: var(--text-primary);
-      font-family: var(--font-body);
-      font-size: 0.92rem;
-      transition: border-color 0.3s, box-shadow 0.3s;
-      outline: none;
+    .form-g input::placeholder, .form-g textarea::placeholder { color: var(--text3); }
+    .form-g input:focus, .form-g select:focus, .form-g textarea:focus {
+      border-color: var(--accent); box-shadow: 0 0 0 3px rgba(255,107,53,0.08);
     }
-
-    .form-group input::placeholder,
-    .form-group textarea::placeholder {
-      color: var(--text-muted);
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
-    }
-
-    .form-group select {
+    .form-g select {
       appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%235A5A6A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 16px center;
-      padding-right: 40px;
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%235A5A6A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
     }
+    .form-g select option { background: var(--card); color: var(--text); }
+    .form-g textarea { resize: vertical; min-height: 80px; }
+    .btn-submit { width: 100%; padding: 15px; font-size: 1rem; font-weight: 700; margin-top: 6px; }
+    .form-trust { text-align: center; margin-top: 14px; font-size: 0.75rem; color: var(--text3); }
 
-    .form-group select option {
-      background: var(--bg-card);
-      color: var(--text-primary);
-    }
-
-    .form-group textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    .btn-submit {
-      width: 100%;
-      padding: 16px;
-      font-size: 1rem;
-      font-weight: 700;
-      margin-top: 8px;
-    }
-
-    .form-trust {
-      text-align: center;
-      margin-top: 16px;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    /* ============================================
-       12. BOTTOM CTA
-    ============================================ */
+    /* ===== BOTTOM CTA ===== */
     .bottom-cta {
-      padding: clamp(48px, 8vw, 80px) 24px;
-      text-align: center;
-      position: relative;
-      background: linear-gradient(180deg, transparent, rgba(255, 107, 53, 0.03), transparent);
+      padding: clamp(48px,8vw,72px) 24px; text-align: center;
+      background: linear-gradient(180deg, transparent, rgba(255,107,53,0.03), transparent);
     }
-
     .bottom-cta h2 {
-      font-family: var(--font-display);
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      font-weight: 700;
-      margin-bottom: 24px;
+      font-family: var(--font-d); font-size: clamp(1.8rem,3.5vw,2.5rem);
+      font-weight: 700; margin-bottom: 20px;
     }
+    .trust-row { display: flex; align-items: center; justify-content: center; gap: 28px; margin-top: 28px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--text3); }
+    .trust-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
 
-    .trust-badges {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 32px;
-      margin-top: 32px;
-      flex-wrap: wrap;
-    }
-
-    .trust-badge {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    .trust-badge-icon {
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
-      background: rgba(45, 212, 168, 0.08);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* ============================================
-       13. FOOTER
-    ============================================ */
-    .footer {
-      padding: 48px 24px 32px;
-      border-top: 1px solid var(--border);
-    }
-
+    /* ===== FOOTER ===== */
+    .footer { padding: 40px 24px 28px; border-top: 1px solid var(--border); }
     .footer-inner {
-      max-width: var(--container);
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 24px;
+      max-width: min(1100px,90vw); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;
     }
-
-    .footer-brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .footer-brand svg { width: 32px; height: 32px; }
-    .footer-brand-text {
-      font-family: var(--font-display);
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-
-    .footer-links {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .footer-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.85rem;
-      transition: color 0.3s;
-    }
+    .footer-brand { display: flex; align-items: center; gap: 8px; }
+    .footer-brand svg { width: 28px; height: 28px; }
+    .footer-brand span { font-family: var(--font-d); font-weight: 600; font-size: 1rem; }
+    .footer-links { display: flex; gap: 16px; }
+    .footer-links a { color: var(--text3); text-decoration: none; font-size: 0.8rem; transition: color 0.3s; }
     .footer-links a:hover { color: var(--accent-light); }
-
-    .footer-social {
-      display: flex;
-      gap: 12px;
-    }
-
+    .footer-social { display: flex; gap: 10px; }
     .footer-social a {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.8rem;
-      transition: all 0.3s;
+      width: 32px; height: 32px; border-radius: 8px;
+      background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text3); text-decoration: none; font-size: 0.7rem; transition: all 0.3s;
     }
-    .footer-social a:hover {
-      border-color: var(--accent);
-      color: var(--accent-light);
-      background: rgba(255, 107, 53, 0.08);
-    }
-
+    .footer-social a:hover { border-color: var(--accent); color: var(--accent-light); }
     .footer-bottom {
-      max-width: var(--container);
-      margin: 32px auto 0;
-      padding-top: 24px;
+      max-width: min(1100px,90vw); margin: 24px auto 0; padding-top: 20px;
       border-top: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      font-size: 0.78rem;
-      color: var(--text-muted);
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+      font-size: 0.72rem; color: var(--text3);
     }
 
-    /* ============================================
-       SEO SECTION
-    ============================================ */
-    .seo-section {
-      padding: 48px 24px;
-      max-width: var(--container);
-      margin: 0 auto;
-    }
-
-    .seo-section h2 {
-      font-family: var(--font-display);
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-bottom: 16px;
-      color: var(--text-muted);
-    }
-
-    .seo-section p {
-      color: var(--text-muted);
-      font-size: 0.82rem;
-      line-height: 1.8;
-      margin-bottom: 16px;
-    }
-
-    /* ============================================
-       RESPONSIVE
-    ============================================ */
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 1024px) {
-      .audience-grid { grid-template-columns: repeat(2, 1fr); }
-      .commission-grid { grid-template-columns: repeat(3, 1fr); }
       .celeb-grid { grid-template-columns: repeat(3, 1fr); }
-      .features-grid { grid-template-columns: repeat(2, 1fr); }
     }
-
     @media (max-width: 768px) {
-      .stats-bar-inner {
-        flex-direction: column;
-        gap: 0;
-        padding: 24px 0;
-      }
-      .stat-item {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-        padding: 16px 24px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        text-align: left;
-        width: 100%;
-        justify-content: center;
-      }
-      .stat-item:last-child { border-bottom: none; }
-      .stat-number { font-size: 1.4rem; }
-      .stat-label { margin-top: 0; }
-
-      .audience-grid { grid-template-columns: 1fr; }
-      .commission-grid { grid-template-columns: 1fr; }
-      .celeb-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-      }
-      .features-grid { grid-template-columns: 1fr; }
-      .steps-grid { grid-template-columns: 1fr; gap: 24px; }
-      .steps-grid::before { display: none; }
+      .stats-inner { grid-template-columns: repeat(3, 1fr); }
+      .stat:nth-child(4) { border-right: none; }
+      .stat:nth-child(n+4) { border-top: 1px solid var(--border); }
+      .why-grid, .commission-grid { grid-template-columns: 1fr; }
+      .celeb-grid { grid-template-columns: repeat(3, 1fr); }
       .form-row { grid-template-columns: 1fr; }
-      .preview-container { flex-direction: column; align-items: center; }
-      .browser-mockup { width: 100%; max-width: 440px; }
-      .phone-mockup { width: 220px; height: 440px; }
-      .footer-inner { flex-direction: column; text-align: center; }
-      .footer-bottom { flex-direction: column; text-align: center; }
+      .footer-inner, .footer-bottom { flex-direction: column; text-align: center; }
     }
-
     @media (max-width: 480px) {
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+      .stat { border-right: none; border-bottom: 1px solid var(--border); }
+      .stat:nth-child(even) { border-left: 1px solid var(--border); }
+      .stat:last-child { border-bottom: none; grid-column: 1 / -1; }
       .celeb-grid { grid-template-columns: repeat(2, 1fr); }
       .hero-ctas { flex-direction: column; width: 100%; }
       .hero-ctas .btn { width: 100%; justify-content: center; }
-      .celeb-avatar { width: 56px; height: 56px; font-size: 1rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ========== 1. HERO ========== -->
+  <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-content">
       <div class="hero-logo">
-        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="44" height="44" rx="10" fill="#FF6B35"/>
-          <text x="50%" y="54%" text-anchor="middle" dominant-baseline="central" fill="white" font-family="'Clash Display', sans-serif" font-weight="700" font-size="20">Oh</text>
-        </svg>
-        <span class="hero-logo-text">OhChat</span>
+        <img src="logo.webp" alt="OhChat" />
       </div>
-
-      <div class="hero-badge">
-        <span class="pulse"></span>
-        Now Accepting Affiliates
-      </div>
-
-      <h1><span class="gradient-text">Monetize the<br>AI Revolution</span></h1>
-
-      <p class="hero-sub">The highest-converting AI companion platform. Up to 40% revshare, $37 PPS, and celebrity digital twins your audience already knows.</p>
-
+      <div class="hero-badge"><span class="dot"></span> #1 AI Girlfriend Affiliate Offer</div>
+      <h1><span class="gradient-text">Best Offer in<br>AI Girlfriends</span></h1>
+      <p class="hero-sub">Up to 40% revshare, $37 PPS, celebrity funnels that convert, and crypto payouts every week. Built to outperform Candy.ai and OurDream.ai.</p>
       <div class="hero-ctas">
-        <a href="#signup" class="btn btn-primary">
-          Apply Now
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#commission" class="btn btn-ghost">View Commission Models</a>
-        <a href="#" class="btn btn-text">
-          Affiliate Login
-          <svg viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+        <a href="#signup" class="btn btn-primary">Apply Now <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="#commission" class="btn btn-ghost">View Payouts</a>
       </div>
     </div>
   </section>
 
-  <!-- ========== 2. STATS BAR ========== -->
-  <section class="stats-bar">
-    <div class="stats-bar-inner reveal">
-      <div class="stat-item">
-        <div class="stat-number" data-target="40">0%</div>
-        <div class="stat-label">Top Revshare</div>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats-inner reveal">
+      <div class="stat">
+        <div class="stat-num" data-target="40">0%</div>
+        <div class="stat-lbl">Revshare</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number" data-target="37" data-prefix="$" data-suffix="">$0</div>
-        <div class="stat-label">Per Sale (PPS)</div>
+      <div class="stat">
+        <div class="stat-num" data-target="37" data-prefix="$" data-suffix="">$0</div>
+        <div class="stat-lbl">Per Sale</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number" data-target="150" data-suffix="+">0+</div>
-        <div class="stat-label">AI Characters</div>
+      <div class="stat">
+        <div class="stat-num" style="color: var(--green);">Crypto</div>
+        <div class="stat-lbl">Weekly Payouts</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number" data-target="200" data-suffix="K+">0K+</div>
-        <div class="stat-label">Active Users</div>
+      <div class="stat">
+        <div class="stat-num" data-target="150" data-suffix="+">0+</div>
+        <div class="stat-lbl">AI Characters</div>
       </div>
-      <div class="stat-item cnn-stat">
-        <span class="cnn-label">As Seen On</span>
-        <span class="cnn-logo">CNN</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== 3. AUDIENCE SEGMENTATION ========== -->
-  <section class="audience" id="who">
-    <div class="section-header reveal">
-      <h2 class="section-title">Who Is This For?</h2>
-      <p class="section-sub" style="margin: 0 auto;">Whatever traffic you drive, we help you monetize it.</p>
-    </div>
-
-    <div class="audience-grid">
-      <div class="audience-card reveal" style="transition-delay: 0ms;">
-        <div class="audience-icon">&#127909;</div>
-        <h3>Content Creators</h3>
-        <p>Turn your audience into revenue. Whether you make videos, streams, or posts &mdash; your fans are ready to convert on celebrity AI.</p>
-      </div>
-      <div class="audience-card reveal" style="transition-delay: 100ms;">
-        <div class="audience-icon">&#128241;</div>
-        <h3>Social Media Affiliates</h3>
-        <p>Your followers trust you. We give you the offers they actually want. Instagram, TikTok, Twitter, Telegram &mdash; all accepted.</p>
-      </div>
-      <div class="audience-card reveal" style="transition-delay: 200ms;">
-        <div class="audience-icon">&#128200;</div>
-        <h3>Media Buyers &amp; Advertisers</h3>
-        <p>Stop breaking even on PPC. Our celebrity names drive industry-leading EPC. Test with $100 and see the difference.</p>
-      </div>
-      <div class="audience-card reveal" style="transition-delay: 300ms;">
-        <div class="audience-icon">&#128231;</div>
-        <h3>Email, SEO &amp; Everyone Else</h3>
-        <p>Got traffic? We want you. Email lists, forums, blogs, cam sites &mdash; whatever you have, we help you monetize it.</p>
+      <div class="stat">
+        <div class="stat-num" style="color: #CC0000; font-family: var(--font-d); letter-spacing: 0.03em;">CNN</div>
+        <div class="stat-lbl">Featured</div>
       </div>
     </div>
   </section>
 
-  <!-- ========== 4. COMMISSION MODELS ========== -->
-  <section class="commission" id="commission">
-    <div class="section-header reveal">
-      <h2 class="section-title">Commission Models</h2>
-      <p class="section-sub" style="margin: 0 auto;">Three ways to earn. Choose what fits your traffic best &mdash; or combine them all.</p>
+  <!-- WHY OHCHAT -->
+  <section class="why" id="why">
+    <div class="why-header reveal">
+      <h2>Why Affiliates <span class="gradient-text">Choose OhChat</span></h2>
+      <p>The unfair advantages that make us the highest-converting AI girlfriend offer.</p>
     </div>
-
-    <div class="commission-grid">
-      <div class="commission-card featured reveal" style="transition-delay: 0ms;">
-        <span class="commission-badge badge-popular">Most Popular</span>
-        <div class="commission-rate gradient-text">40%</div>
-        <div class="commission-type">Revshare &middot; On Original AI Characters</div>
-        <ul class="commission-features">
-          <li>Recurring commissions on all purchases</li>
-          <li>Earn from every transaction &mdash; chat, voice, images, video</li>
-          <li>Scales with user spending over time</li>
-          <li>Lifetime attribution on referred users</li>
-        </ul>
-        <div class="commission-best">Best for maximizing long-term earnings</div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="icon">&#11088;</div>
+        <h3>Celebrity Funnels</h3>
+        <p>Carmen Electra, Katie Price, Brandi Love &mdash; names your audience already knows. Custom landing pages for each celebrity that convert at 2-3x industry average.</p>
       </div>
-
-      <div class="commission-card reveal" style="transition-delay: 100ms;">
-        <span class="commission-badge badge-celebrity">Celebrity</span>
-        <div class="commission-rate" style="color: var(--gold);">10%</div>
-        <div class="commission-type">Revshare &middot; On Celebrity Digital Twins</div>
-        <ul class="commission-features">
-          <li>Earn on Carmen Electra, Katie Price, Brandi Love, Lisa Ann + more</li>
-          <li>Celebrity names = higher CTR and conversion</li>
-          <li>Premium pricing = bigger commissions per user</li>
-          <li>Exclusive hooks your audience already recognizes</li>
-        </ul>
-        <div class="commission-best">Best for mainstream audiences</div>
+      <div class="why-card reveal" style="transition-delay:60ms;">
+        <div class="icon">&#128640;</div>
+        <h3>Custom Landing Pages</h3>
+        <p>We build high-converting funnels tailored to your traffic source. Not one-size-fits-all templates &mdash; real, tested pages optimized for your audience.</p>
       </div>
-
-      <div class="commission-card reveal" style="transition-delay: 200ms;">
-        <span class="commission-badge badge-volume">High Volume</span>
-        <div class="commission-rate" style="color: var(--success);">$37</div>
-        <div class="commission-type">PPS &middot; Pay-Per-Sale</div>
-        <ul class="commission-features">
-          <li>Fixed payout per qualified signup</li>
-          <li>No recurring dependency &mdash; get paid and scale</li>
-          <li>Instant commission on conversion</li>
-          <li>Predictable revenue for budget planning</li>
-        </ul>
-        <div class="commission-best">Best for high-volume media buyers</div>
+      <div class="why-card reveal" style="transition-delay:120ms;">
+        <div class="icon">&#9889;</div>
+        <h3>Full-Stack AI</h3>
+        <p>Chat, voice, images, video, live cams. Every modality monetized. Users stick around because the product is actually good.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ========== 5. CELEBRITY ROSTER ========== -->
-  <section class="celebrities" id="celebrities">
-    <div class="section-header reveal">
-      <h2 class="section-title">Names Your Audience <span class="gradient-text">Already Knows</span></h2>
-      <p class="section-sub" style="margin: 0 auto;">Verified celebrity digital twins. No other affiliate offer has this.</p>
-    </div>
-
-    <div class="celeb-grid">
-      <div class="celeb-card reveal" style="transition-delay: 0ms;">
-        <div class="celeb-avatar av1">CE</div>
-        <div class="celeb-name">Carmen Electra</div>
-        <div class="celeb-verified">
-          <svg viewBox="0 0 16 16" fill="none"><path d="M8 0l2.12 5.26L16 6.18l-4 3.64L13.09 16 8 12.84 2.91 16 4 9.82 0 6.18l5.88-.92L8 0z" fill="#FF6B35"/></svg>
-          Verified
-        </div>
-        <div class="celeb-followers">2M Followers</div>
+      <div class="why-card reveal" style="transition-delay:180ms;">
+        <div class="icon">&#128176;</div>
+        <h3>Crypto Payouts Weekly</h3>
+        <p>Get paid every week in USDT, BTC, or ETH. No 15-day holds. No 30-day Net terms. Wire and Paxum also available.</p>
       </div>
-      <div class="celeb-card reveal" style="transition-delay: 60ms;">
-        <div class="celeb-avatar av2">KP</div>
-        <div class="celeb-name">Katie Price</div>
-        <div class="celeb-verified">
-          <svg viewBox="0 0 16 16" fill="none"><path d="M8 0l2.12 5.26L16 6.18l-4 3.64L13.09 16 8 12.84 2.91 16 4 9.82 0 6.18l5.88-.92L8 0z" fill="#FF6B35"/></svg>
-          Verified
-        </div>
-        <div class="celeb-followers">2.4M Followers</div>
-      </div>
-      <div class="celeb-card reveal" style="transition-delay: 120ms;">
-        <div class="celeb-avatar av3">BL</div>
-        <div class="celeb-name">Brandi Love</div>
-        <div class="celeb-verified">
-          <svg viewBox="0 0 16 16" fill="none"><path d="M8 0l2.12 5.26L16 6.18l-4 3.64L13.09 16 8 12.84 2.91 16 4 9.82 0 6.18l5.88-.92L8 0z" fill="#FF6B35"/></svg>
-          Verified
-        </div>
-      </div>
-      <div class="celeb-card reveal" style="transition-delay: 180ms;">
-        <div class="celeb-avatar av4">LA</div>
-        <div class="celeb-name">Lisa Ann</div>
-        <div class="celeb-verified">
-          <svg viewBox="0 0 16 16" fill="none"><path d="M8 0l2.12 5.26L16 6.18l-4 3.64L13.09 16 8 12.84 2.91 16 4 9.82 0 6.18l5.88-.92L8 0z" fill="#FF6B35"/></svg>
-          Verified
-        </div>
-      </div>
-      <div class="celeb-card reveal" style="transition-delay: 240ms;">
-        <div class="celeb-avatar av5">JC</div>
-        <div class="celeb-name">Jessica Cakes</div>
-        <div class="celeb-verified">
-          <svg viewBox="0 0 16 16" fill="none"><path d="M8 0l2.12 5.26L16 6.18l-4 3.64L13.09 16 8 12.84 2.91 16 4 9.82 0 6.18l5.88-.92L8 0z" fill="#FF6B35"/></svg>
-          Verified
-        </div>
-      </div>
-      <div class="celeb-card reveal" style="transition-delay: 300ms;">
-        <div class="celeb-avatar av6">LS</div>
-        <div class="celeb-name">Lexington Steele</div>
-        <div class="celeb-verified">
-          <svg viewBox="0 0 16 16" fill="none"><path d="M8 0l2.12 5.26L16 6.18l-4 3.64L13.09 16 8 12.84 2.91 16 4 9.82 0 6.18l5.88-.92L8 0z" fill="#FF6B35"/></svg>
-          Verified
-        </div>
-      </div>
-    </div>
-    <div class="celeb-more reveal">
-      <span>+ 150 more</span> AI characters and growing
-    </div>
-  </section>
-
-  <!-- ========== 6. PRODUCT PREVIEW ========== -->
-  <section class="product-preview">
-    <div class="section-header reveal">
-      <h2 class="section-title">See What You're <span class="gradient-text">Promoting</span></h2>
-      <p class="section-sub" style="margin: 0 auto;">A premium product your audience will actually love. Higher retention = more revenue for you.</p>
-    </div>
-
-    <div class="preview-container reveal">
-      <div class="phone-mockup">
-        <div class="phone-mockup-inner">
-          <div class="phone-notch"></div>
-          <div class="phone-ui-avatar"></div>
-          <div class="phone-ui-name">Carmen Electra</div>
-          <div class="phone-ui-status">Online now</div>
-          <div class="phone-ui-chat">
-            <div class="chat-bubble chat-ai">Hey there! I've been waiting for you... what's on your mind? &#128522;</div>
-            <div class="chat-bubble chat-user">Hi Carmen! Big fan.</div>
-            <div class="chat-bubble chat-ai">Aww that's so sweet! Tell me more about yourself...</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="browser-mockup">
-        <div class="browser-bar">
-          <div class="browser-dot"></div>
-          <div class="browser-dot"></div>
-          <div class="browser-dot"></div>
-          <span class="browser-url">ohchat.com/explore</span>
-        </div>
-        <div class="browser-content">
-          <div class="browser-card-mock">
-            <div class="mock-avatar-small"></div>
-            <div class="mock-line w80"></div>
-            <div class="mock-line w60"></div>
-            <div class="mock-line w40"></div>
-          </div>
-          <div class="browser-card-mock">
-            <div class="mock-avatar-small" style="background: linear-gradient(135deg, #FF3E6C, #D63384);"></div>
-            <div class="mock-line w60"></div>
-            <div class="mock-line w80"></div>
-            <div class="mock-line w40"></div>
-          </div>
-          <div class="browser-card-mock">
-            <div class="mock-avatar-small" style="background: linear-gradient(135deg, #FFD700, #FF8F5E);"></div>
-            <div class="mock-line w80"></div>
-            <div class="mock-line w40"></div>
-            <div class="mock-line w60"></div>
-          </div>
-          <div class="browser-card-mock">
-            <div class="mock-avatar-small" style="background: linear-gradient(135deg, #2DD4A8, #28A7E8);"></div>
-            <div class="mock-line w40"></div>
-            <div class="mock-line w80"></div>
-            <div class="mock-line w60"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <p class="preview-caption reveal"><strong>Premium UX</strong> = higher conversion rates = <strong>more money for you.</strong></p>
-  </section>
-
-  <!-- ========== 7. FEATURES GRID ========== -->
-  <section class="features" id="features">
-    <div class="section-header reveal">
-      <h2 class="section-title">Why <span class="gradient-text">OhChat</span></h2>
-      <p class="section-sub" style="margin: 0 auto;">Everything you need to maximize your affiliate earnings.</p>
-    </div>
-
-    <div class="features-grid">
-      <div class="feature-card reveal" style="transition-delay: 0ms;">
-        <div class="feature-icon">&#9889;</div>
-        <h3>Full-Stack AI Engine</h3>
-        <p>Chat, voice, image, video, live cams. Every interaction monetized. More modalities = more revenue.</p>
-      </div>
-      <div class="feature-card reveal" style="transition-delay: 80ms;">
-        <div class="feature-icon">&#11088;</div>
-        <h3>Celebrity Digital Twins</h3>
-        <p>Names audiences recognize. Higher CTR, conversion, and EPC than any generic AI platform.</p>
-      </div>
-      <div class="feature-card reveal" style="transition-delay: 160ms;">
-        <div class="feature-icon">&#128202;</div>
+      <div class="why-card reveal" style="transition-delay:240ms;">
+        <div class="icon">&#128202;</div>
         <h3>Real-Time Tracking</h3>
-        <p>Live dashboard with sub-ID tracking and API access. Know exactly what's converting.</p>
+        <p>Live dashboard, sub-ID tracking, postback URLs, API access. Know exactly what's converting and scale what works.</p>
       </div>
-      <div class="feature-card reveal" style="transition-delay: 240ms;">
-        <div class="feature-icon">&#128176;</div>
-        <h3>Weekly Payouts</h3>
-        <p>Paid every week via wire, crypto, or Paxum. No Net-15. No 30-day holds. Your money, fast.</p>
-      </div>
-      <div class="feature-card reveal" style="transition-delay: 320ms;">
-        <div class="feature-icon">&#127912;</div>
-        <h3>Marketing Materials</h3>
-        <p>Landing pages, banners, email templates, social creatives. Ready to deploy on day one.</p>
-      </div>
-      <div class="feature-card reveal" style="transition-delay: 400ms;">
-        <div class="feature-icon">&#129309;</div>
-        <h3>Dedicated Support</h3>
-        <p>Personal affiliate manager. Priority Telegram and email support. We're invested in your success.</p>
+      <div class="why-card reveal" style="transition-delay:300ms;">
+        <div class="icon">&#129309;</div>
+        <h3>Dedicated AM</h3>
+        <p>Personal affiliate manager on Telegram. Campaign optimization, custom creatives, and priority support from day one.</p>
       </div>
     </div>
   </section>
 
-  <!-- ========== 8. FOUNDER QUOTE ========== -->
-  <section class="founder-quote reveal">
+  <!-- COMMISSION -->
+  <section class="commission" id="commission">
+    <div class="commission-header reveal">
+      <h2>Commission Models</h2>
+      <p>Three ways to earn. Choose what fits your traffic, or run all three.</p>
+    </div>
+    <div class="commission-grid">
+      <div class="comm-card featured reveal">
+        <span class="comm-badge badge-pop">Most Popular</span>
+        <div class="comm-rate gradient-text">40%</div>
+        <div class="comm-type">Revshare &middot; Original AI Characters</div>
+        <ul class="comm-list">
+          <li>Recurring commissions on every transaction</li>
+          <li>Chat, voice, images, video &mdash; all monetized</li>
+          <li>Lifetime attribution on referred users</li>
+          <li>Scales as users spend more over time</li>
+        </ul>
+        <div class="comm-best">Best for long-term passive income</div>
+      </div>
+      <div class="comm-card reveal" style="transition-delay:80ms;">
+        <span class="comm-badge badge-cel">Celebrity</span>
+        <div class="comm-rate" style="color: var(--gold);">10%</div>
+        <div class="comm-type">Revshare &middot; Celebrity Digital Twins</div>
+        <ul class="comm-list">
+          <li>Carmen Electra, Katie Price, Brandi Love, Lisa Ann</li>
+          <li>Celebrity names = higher CTR and conversion</li>
+          <li>Premium pricing = bigger per-user commissions</li>
+          <li>Custom celebrity landing pages provided</li>
+        </ul>
+        <div class="comm-best">Best for mainstream audiences</div>
+      </div>
+      <div class="comm-card reveal" style="transition-delay:160ms;">
+        <span class="comm-badge badge-vol">High Volume</span>
+        <div class="comm-rate" style="color: var(--green);">$37</div>
+        <div class="comm-type">PPS &middot; Pay-Per-Sale</div>
+        <ul class="comm-list">
+          <li>Fixed payout per qualified signup</li>
+          <li>Instant commission on conversion</li>
+          <li>No recurring dependency &mdash; scale fast</li>
+          <li>Predictable revenue for media buying budgets</li>
+        </ul>
+        <div class="comm-best">Best for high-volume media buyers</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CELEBRITIES -->
+  <section class="celebs" id="celebrities">
+    <div class="celebs-header reveal">
+      <h2>Names Your Audience <span class="gradient-text">Already Knows</span></h2>
+      <p>Celebrity digital twins with pre-built funnels. No other AI girlfriend offer has this.</p>
+    </div>
+    <div class="celeb-grid">
+      <div class="celeb reveal"><div class="celeb-av av1">CE</div><div class="celeb-name">Carmen Electra</div><div class="celeb-tag">Verified</div><div class="celeb-fol">2M Followers</div></div>
+      <div class="celeb reveal" style="transition-delay:40ms;"><div class="celeb-av av2">KP</div><div class="celeb-name">Katie Price</div><div class="celeb-tag">Verified</div><div class="celeb-fol">2.4M Followers</div></div>
+      <div class="celeb reveal" style="transition-delay:80ms;"><div class="celeb-av av3">BL</div><div class="celeb-name">Brandi Love</div><div class="celeb-tag">Verified</div></div>
+      <div class="celeb reveal" style="transition-delay:120ms;"><div class="celeb-av av4">LA</div><div class="celeb-name">Lisa Ann</div><div class="celeb-tag">Verified</div></div>
+      <div class="celeb reveal" style="transition-delay:160ms;"><div class="celeb-av av5">JC</div><div class="celeb-name">Jessica Cakes</div><div class="celeb-tag">Verified</div></div>
+      <div class="celeb reveal" style="transition-delay:200ms;"><div class="celeb-av av6">LS</div><div class="celeb-name">Lexington Steele</div><div class="celeb-tag">Verified</div></div>
+    </div>
+    <div class="celeb-more reveal"><span>+ 150 more</span> AI characters and growing</div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section reveal">
     <div class="quote-inner">
       <div class="quote-mark">&ldquo;</div>
       <p class="quote-text">We built OhChat to be the highest-converting AI companion platform on the market. When our affiliates win, we win.</p>
       <div class="quote-author">
-        <div class="quote-avatar">NY</div>
-        <div class="quote-author-info">
-          <div class="quote-author-name">Nic Young</div>
-          <div class="quote-author-title">CEO of OhChat &middot; Featured in CNN Business</div>
+        <div class="quote-av">NY</div>
+        <div class="quote-info">
+          <div class="quote-name">Nic Young</div>
+          <div class="quote-title">CEO of OhChat &middot; Featured in CNN Business</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== 9. FAQ ========== -->
+  <!-- FAQ -->
   <section class="faq" id="faq">
-    <div class="section-header reveal">
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <p class="section-sub" style="margin: 0 auto;">Everything you need to know before you start earning.</p>
-    </div>
-
+    <div class="faq-header reveal"><h2>FAQ</h2></div>
     <div class="faq-list">
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          How do I get started?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <div class="faq-answer-inner">Fill out the application form below. Our team reviews every application within 24 hours. Once approved, you'll get instant access to your tracking links, marketing materials, and analytics dashboard.</div>
-        </div>
+        <button class="faq-q" aria-expanded="false">How do I get started?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Fill out the form below. We review every application within 24 hours. Once approved, you get tracking links, marketing materials, custom landing pages, and your analytics dashboard.</div></div>
       </div>
-
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          What commission structure should I choose?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <div class="faq-answer-inner">If you want long-term passive income, go with 40% revshare on original characters. If you're a media buyer who wants fast, predictable returns, choose $37 PPS. You can also combine both &mdash; revshare on organic traffic and PPS on paid campaigns.</div>
-        </div>
+        <button class="faq-q" aria-expanded="false">How and when do I get paid?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Weekly payouts every Monday. We support USDT, BTC, ETH, wire transfer, and Paxum. $100 minimum payout. No 15-day or 30-day holds &mdash; you earn it, you get it fast.</div></div>
       </div>
-
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          When and how do I get paid?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <div class="faq-answer-inner">Weekly payouts. We support wire transfer, cryptocurrency, and Paxum. No 15-day or 30-day holds. Minimum payout threshold is $100.</div>
-        </div>
+        <button class="faq-q" aria-expanded="false">What commission model should I pick?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">40% revshare for long-term passive income. $37 PPS for fast, predictable returns on paid traffic. You can run both &mdash; revshare on organic, PPS on paid campaigns.</div></div>
       </div>
-
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          What kind of traffic is accepted?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <div class="faq-answer-inner">All traffic sources are accepted including social media, paid ads, SEO, email marketing, Telegram, forums, blogs, review sites, and adult traffic. The only restriction is no incentivized or fraudulent traffic.</div>
-        </div>
+        <button class="faq-q" aria-expanded="false">What traffic sources are accepted?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Everything. Social media, paid ads, SEO, email, Telegram, forums, blogs, cam sites, adult traffic &mdash; all accepted. Only restriction: no incentivized or fraudulent traffic.</div></div>
       </div>
-
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          Do you provide marketing materials?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <div class="faq-answer-inner">Yes. You'll get access to banners, landing pages, email templates, and social media creatives. Top-performing affiliates receive custom creatives and dedicated design support.</div>
-        </div>
+        <button class="faq-q" aria-expanded="false">Do you provide landing pages and creatives?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Pre-built celebrity funnels, custom landing pages for your traffic source, banners, email templates, and social creatives. Top performers get dedicated design support and custom funnels built for them.</div></div>
       </div>
-
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          What's the cookie duration?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <div class="faq-answer-inner">30 days with last-click attribution. If a user clicks your link and converts within 30 days, you get the commission &mdash; even if they leave and come back.</div>
-        </div>
+        <button class="faq-q" aria-expanded="false">What's the cookie duration?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">30 days, last-click attribution. User clicks your link, converts within 30 days &mdash; you get paid. Even if they leave and come back.</div></div>
       </div>
-
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          What countries are accepted?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <div class="faq-answer-inner">Global. We accept traffic from all countries. Tier 1 English-speaking markets (US, UK, Canada, Australia) convert highest, but we see strong performance worldwide.</div>
-        </div>
+        <button class="faq-q" aria-expanded="false">What makes OhChat better than Candy.ai or OurDream?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Celebrity digital twins nobody else has, custom landing pages per traffic source, crypto payouts weekly, multimodal AI (chat + voice + image + video + live cams), and CNN press coverage. Higher EPC, better product, faster payouts.</div></div>
       </div>
-
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          What makes OhChat different from other AI platforms?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <div class="faq-answer-inner">Celebrity digital twins (Carmen Electra, Katie Price, Brandi Love, etc.), multimodal AI (chat, voice, image, video, live cams), weekly payouts, and CNN feature coverage. No other AI companion platform offers this combination.</div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          Do you offer a dedicated affiliate manager?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <div class="faq-answer-inner">Yes. All affiliates get support via email and Telegram. Top performers are assigned a dedicated affiliate manager for priority support, custom creatives, and campaign optimization.</div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          Can I promote on adult sites?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <div class="faq-answer-inner">Absolutely. Adult traffic is not only accepted &mdash; it's encouraged. OhChat is built for this audience, and adult traffic sources tend to convert extremely well on our platform.</div>
-        </div>
+        <button class="faq-q" aria-expanded="false">Can I promote on adult sites?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes &mdash; encouraged. Adult traffic converts extremely well on OhChat. We provide adult-specific creatives and landing pages.</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ========== 10. HOW IT WORKS ========== -->
-  <section class="how-it-works" id="how">
-    <div class="section-header reveal">
-      <h2 class="section-title">How It Works</h2>
-      <p class="section-sub" style="margin: 0 auto;">Three steps to start earning.</p>
-    </div>
-
-    <div class="steps-grid">
-      <div class="step-item reveal" style="transition-delay: 0ms;">
-        <div class="step-number">1</div>
-        <div class="step-title">Apply Now</div>
-        <div class="step-desc">Fill out the form below. Applications are reviewed within 24 hours.</div>
-      </div>
-      <div class="step-item reveal" style="transition-delay: 150ms;">
-        <div class="step-number">2</div>
-        <div class="step-title">Get Your Links</div>
-        <div class="step-desc">Access your tracking links, creatives, and real-time analytics dashboard.</div>
-      </div>
-      <div class="step-item reveal" style="transition-delay: 300ms;">
-        <div class="step-number">3</div>
-        <div class="step-title">Start Earning</div>
-        <div class="step-desc">Drive traffic, watch conversions roll in, and get paid every week.</div>
-      </div>
-    </div>
-
-    <div class="hiw-cta reveal">
-      <a href="#signup" class="btn btn-primary" style="padding: 16px 40px; font-size: 1.05rem;">
-        Apply Now
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <span class="hiw-email">or contact us at <a href="mailto:affiliate@oh.xyz">affiliate@oh.xyz</a></span>
-    </div>
-  </section>
-
-  <!-- ========== 11. SIGNUP FORM ========== -->
+  <!-- SIGNUP -->
   <section class="signup" id="signup">
-    <div class="section-header reveal">
-      <h2 class="section-title">Apply to Join</h2>
-      <p class="section-sub" style="margin: 0 auto;">Takes 2 minutes. We respond within 24 hours.</p>
+    <div class="signup-header reveal">
+      <h2>Apply Now</h2>
+      <p>Takes 2 minutes. We respond within 24 hours.</p>
     </div>
-
-    <div class="signup-form-wrapper reveal">
+    <div class="signup-form reveal">
       <form id="affiliate-form" action="#" method="POST">
         <div class="form-row">
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" placeholder="John" required>
-          </div>
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
-          </div>
+          <div class="form-g"><label for="fn">First Name</label><input type="text" id="fn" name="firstName" placeholder="John" required></div>
+          <div class="form-g"><label for="ln">Last Name</label><input type="text" id="ln" name="lastName" placeholder="Doe" required></div>
         </div>
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="john@example.com" required>
-        </div>
-
-        <div class="form-group">
-          <label for="contact">Telegram / Skype / WhatsApp</label>
-          <input type="text" id="contact" name="contact" placeholder="@your_handle">
-        </div>
-
+        <div class="form-g"><label for="em">Email</label><input type="email" id="em" name="email" placeholder="john@example.com" required></div>
+        <div class="form-g"><label for="tg">Telegram / Skype / WhatsApp</label><input type="text" id="tg" name="contact" placeholder="@your_handle"></div>
         <div class="form-row">
-          <div class="form-group">
-            <label for="trafficSource">Traffic Source</label>
-            <select id="trafficSource" name="trafficSource" required>
-              <option value="" disabled selected>Select your primary source</option>
+          <div class="form-g">
+            <label for="ts">Traffic Source</label>
+            <select id="ts" name="trafficSource" required>
+              <option value="" disabled selected>Select source</option>
               <option value="social">Social Media</option>
               <option value="paid">Paid Ads / Media Buying</option>
               <option value="seo">SEO / Organic</option>
               <option value="email">Email Marketing</option>
               <option value="telegram">Telegram</option>
-              <option value="adult">Adult Sites / Cam Sites</option>
-              <option value="content">Content Creation / YouTube</option>
+              <option value="adult">Adult / Cam Sites</option>
+              <option value="content">Content / YouTube</option>
               <option value="other">Other</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="payoutModel">Preferred Payout Model</label>
-            <select id="payoutModel" name="payoutModel" required>
-              <option value="" disabled selected>Choose a model</option>
-              <option value="revshare40">40% Revshare (Original AI)</option>
-              <option value="revshare10">10% Revshare (Celebrity)</option>
-              <option value="pps37">$37 PPS (Pay-Per-Sale)</option>
+          <div class="form-g">
+            <label for="pm">Payout Model</label>
+            <select id="pm" name="payoutModel" required>
+              <option value="" disabled selected>Choose model</option>
+              <option value="revshare40">40% Revshare</option>
+              <option value="revshare10">10% Celebrity Revshare</option>
+              <option value="pps37">$37 PPS</option>
               <option value="undecided">Not sure yet</option>
             </select>
           </div>
         </div>
-
-        <div class="form-group">
-          <label for="volume">Monthly Traffic Volume</label>
-          <select id="volume" name="volume">
-            <option value="" disabled selected>Estimated monthly visitors / clicks</option>
-            <option value="under10k">Under 10,000</option>
-            <option value="10k-50k">10,000 - 50,000</option>
-            <option value="50k-200k">50,000 - 200,000</option>
-            <option value="200k-1m">200,000 - 1,000,000</option>
-            <option value="over1m">1,000,000+</option>
+        <div class="form-g">
+          <label for="vol">Monthly Volume</label>
+          <select id="vol" name="volume">
+            <option value="" disabled selected>Estimated monthly traffic</option>
+            <option value="u10k">Under 10K</option>
+            <option value="10k-50k">10K - 50K</option>
+            <option value="50k-200k">50K - 200K</option>
+            <option value="200k-1m">200K - 1M</option>
+            <option value="o1m">1M+</option>
           </select>
         </div>
-
-        <div class="form-group">
-          <label for="notes">Notes / Experience (Optional)</label>
-          <textarea id="notes" name="notes" placeholder="Tell us about your experience, current programs you run, or any questions you have..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-submit">
-          Submit Application
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+        <div class="form-g"><label for="notes">Notes (Optional)</label><textarea id="notes" name="notes" placeholder="Tell us about your experience, current programs, or questions..."></textarea></div>
+        <button type="submit" class="btn btn-primary btn-submit">Submit Application <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       </form>
-      <div class="form-trust">Your information is kept private. We respond within 24 hours.</div>
+      <div class="form-trust">Your info is private. We respond within 24 hours.</div>
     </div>
   </section>
 
-  <!-- ========== 12. BOTTOM CTA ========== -->
+  <!-- BOTTOM CTA -->
   <section class="bottom-cta reveal">
     <h2>Ready to <span class="gradient-text">Start Earning</span>?</h2>
-    <a href="#signup" class="btn btn-primary" style="padding: 16px 40px; font-size: 1.05rem;">
-      Apply Now
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
-    <div class="trust-badges">
-      <div class="trust-badge">
-        <div class="trust-badge-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l2 3h3l-2.5 3L12 11l-4-2-4 2 1.5-4L3 4h3l2-3z" fill="#2DD4A8"/></svg>
-        </div>
-        Secure &amp; Reliable
-      </div>
-      <div class="trust-badge">
-        <div class="trust-badge-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#2DD4A8" stroke-width="1.5"/><path d="M4 8h8M8 4v8" stroke="#2DD4A8" stroke-width="1" stroke-linecap="round"/></svg>
-        </div>
-        Global Coverage
-      </div>
-      <div class="trust-badge">
-        <div class="trust-badge-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1L2 5v4c0 3.3 2.6 6.4 6 7 3.4-.6 6-3.7 6-7V5L8 1z" stroke="#2DD4A8" stroke-width="1.5"/><path d="M5.5 8l2 2 3.5-4" stroke="#2DD4A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        Trusted Platform
-      </div>
+    <a href="#signup" class="btn btn-primary" style="padding:15px 36px; font-size:1rem;">Apply Now <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="trust-row">
+      <div class="trust-item"><span class="trust-dot"></span> Weekly Crypto Payouts</div>
+      <div class="trust-item"><span class="trust-dot"></span> Custom Celebrity Funnels</div>
+      <div class="trust-item"><span class="trust-dot"></span> Global Traffic Accepted</div>
     </div>
   </section>
 
-  <!-- ========== SEO SECTION ========== -->
-  <section class="seo-section">
-    <h2>About the OhChat Affiliate Program</h2>
-    <p>The OhChat affiliate program is designed for media buyers, traffic partners, content creators, and anyone with an audience interested in AI-powered entertainment. OhChat is the leading AI companion platform featuring celebrity digital twins of well-known personalities. With up to 40% revshare on original AI characters, 10% revshare on celebrity interactions, and a flat $37 pay-per-sale option, our affiliate program offers some of the most competitive rates in the AI companion space. Affiliates benefit from weekly payouts via wire, crypto, or Paxum, dedicated affiliate managers for top performers, and a full suite of marketing materials including banners, landing pages, and email templates.</p>
-    <p>OhChat stands apart from other AI platforms with its multimodal capabilities including chat, voice, image generation, video, and live cam features. Featured on CNN Business, OhChat is backed by Utility3 Ltd, a UK-based company that has raised EUR 4.4M in funding. Our platform supports global traffic from all sources including social media, paid advertising, SEO, email marketing, Telegram channels, forums, and adult traffic. With 30-day cookie duration, last-click attribution, real-time tracking dashboards, and sub-ID support, our affiliates have everything they need to optimize their campaigns and maximize their earnings.</p>
-  </section>
-
-  <!-- ========== 13. FOOTER ========== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="32" height="32" rx="8" fill="#FF6B35"/>
-          <text x="50%" y="54%" text-anchor="middle" dominant-baseline="central" fill="white" font-family="'Clash Display', sans-serif" font-weight="700" font-size="14">Oh</text>
-        </svg>
-        <span class="footer-brand-text">OhChat</span>
+        <img src="logo.webp" alt="OhChat" style="width:100px;height:auto;" />
       </div>
-
       <div class="footer-links">
         <a href="mailto:affiliate@oh.xyz">affiliate@oh.xyz</a>
         <a href="#faq">FAQ</a>
-        <a href="#commission">Commission</a>
+        <a href="#commission">Payouts</a>
         <a href="#signup">Apply</a>
       </div>
-
       <div class="footer-social">
-        <a href="https://x.com/ohchatai" target="_blank" rel="noopener" aria-label="X / Twitter">X</a>
-        <a href="https://www.instagram.com/ohchatai/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
-        <a href="https://t.me/ohdotxyznews" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
-        <a href="http://discord.gg/ohdotxyz" target="_blank" rel="noopener" aria-label="Discord">DC</a>
+        <a href="https://x.com/ohchatai" target="_blank" rel="noopener">X</a>
+        <a href="https://www.instagram.com/ohchatai/" target="_blank" rel="noopener">IG</a>
+        <a href="https://t.me/ohdotxyznews" target="_blank" rel="noopener">TG</a>
+        <a href="http://discord.gg/ohdotxyz" target="_blank" rel="noopener">DC</a>
       </div>
     </div>
-
     <div class="footer-bottom">
-      <span>&copy; 2026 OhChat. Utility3 Ltd, 10 Greek Street, London. All rights reserved.</span>
+      <span>&copy; 2026 OhChat &middot; Utility3 Ltd, 10 Greek Street, London</span>
       <span>hello@oh.xyz</span>
     </div>
   </footer>
 
-  <!-- ========== JAVASCRIPT ========== -->
   <script>
-    // Intersection Observer for reveal animations
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    // Reveal on scroll
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-    // Count-up animation for stats
-    const countObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const statNumbers = entry.target.querySelectorAll('.stat-number[data-target]');
-          statNumbers.forEach(el => {
-            const target = parseInt(el.dataset.target);
-            const prefix = el.dataset.prefix || '';
-            const suffix = el.dataset.suffix !== undefined ? el.dataset.suffix : '%';
-            const duration = 1800;
-            const start = performance.now();
-
-            function animate(now) {
-              const elapsed = now - start;
-              const progress = Math.min(elapsed / duration, 1);
-              const eased = 1 - Math.pow(1 - progress, 4);
-              const current = Math.round(eased * target);
-              el.textContent = prefix + current + suffix;
-              if (progress < 1) requestAnimationFrame(animate);
-            }
-            requestAnimationFrame(animate);
+    // Count-up
+    const countObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.stat-num[data-target]').forEach(el => {
+            const t = parseInt(el.dataset.target), pre = el.dataset.prefix||'', suf = el.dataset.suffix !== undefined ? el.dataset.suffix : '%';
+            const dur = 1600, s = performance.now();
+            (function anim(now) {
+              const p = Math.min((now-s)/dur, 1), v = Math.round((1-Math.pow(1-p,4))*t);
+              el.textContent = pre+v+suf;
+              if (p<1) requestAnimationFrame(anim);
+            })(s);
           });
-          countObserver.unobserve(entry.target);
+          countObs.unobserve(e.target);
         }
       });
     }, { threshold: 0.3 });
+    document.querySelectorAll('.stats-inner').forEach(el => countObs.observe(el));
 
-    document.querySelectorAll('.stats-bar-inner').forEach(el => countObserver.observe(el));
-
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const item = button.parentElement;
-        const answer = item.querySelector('.faq-answer');
-        const isActive = item.classList.contains('active');
-
-        // Close all
-        document.querySelectorAll('.faq-item.active').forEach(active => {
-          active.classList.remove('active');
-          active.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-          active.querySelector('.faq-answer').style.maxHeight = '0';
+    // FAQ
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement, ans = item.querySelector('.faq-a'), open = item.classList.contains('active');
+        document.querySelectorAll('.faq-item.active').forEach(a => {
+          a.classList.remove('active'); a.querySelector('.faq-q').setAttribute('aria-expanded','false'); a.querySelector('.faq-a').style.maxHeight = '0';
         });
-
-        // Open clicked (if wasn't already open)
-        if (!isActive) {
-          item.classList.add('active');
-          button.setAttribute('aria-expanded', 'true');
-          answer.style.maxHeight = answer.scrollHeight + 'px';
-        }
+        if (!open) { item.classList.add('active'); btn.setAttribute('aria-expanded','true'); ans.style.maxHeight = ans.scrollHeight+'px'; }
       });
     });
 
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', (e) => {
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(l => {
+      l.addEventListener('click', e => { const t = document.querySelector(l.getAttribute('href')); if (t) { e.preventDefault(); t.scrollIntoView({ behavior:'smooth' }); } });
     });
 
-    // Form submission (placeholder)
-    document.getElementById('affiliate-form').addEventListener('submit', (e) => {
+    // Form
+    document.getElementById('affiliate-form').addEventListener('submit', e => {
       e.preventDefault();
-      const btn = e.target.querySelector('.btn-submit');
-      const originalHTML = btn.innerHTML;
-      btn.innerHTML = '<span style="display:inline-flex;align-items:center;gap:8px;">Application Submitted <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>';
-      btn.style.background = 'var(--success)';
-      btn.disabled = true;
-      setTimeout(() => {
-        btn.innerHTML = originalHTML;
-        btn.style.background = '';
-        btn.disabled = false;
-      }, 3000);
+      const btn = e.target.querySelector('.btn-submit'), orig = btn.innerHTML;
+      btn.innerHTML = 'Application Submitted &#10003;'; btn.style.background = 'var(--green)'; btn.disabled = true;
+      setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; btn.disabled = false; }, 3000);
     });
   </script>
 </body>
